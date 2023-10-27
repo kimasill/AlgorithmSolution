@@ -29,16 +29,11 @@ def taiYear(year):
   return year-543
 
 
-a = int(input())
-b = input()
-nums = []
-sum = 0
-for i in range(3):
-  nums.append(int(b[i])*a)
+print("|\_/|")
+print("|q p|   /}")
+print('( 0 )"""\\')
+print('|"^"`    |')
+print("||_/=\\\\__|")
 
-for i in range(3):
-  print(nums[2-i])
-  sum += (nums[2-i]*10**i)
-print(sum)
 
   
