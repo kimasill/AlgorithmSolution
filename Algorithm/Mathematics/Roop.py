@@ -100,4 +100,29 @@ def MaxNumIndex():
   
   print(f"{temp}\n{index}")
 
-MaxNumIndex()
+def Absent():
+  list = [0 for x in range(30)]
+  absent = []
+  for i in range(28):
+    n = int(input())
+    list[n-1] = 1
+  for i in range(30):
+    if list[i] == 0:
+      absent.append(i+1)
+  absent.sort(reverse=True)
+  print(f"{absent.pop()}\n{absent.pop()}")
+
+def StarV3():
+  n = int(input())
+  for i in range(2*n-1):
+    if(i<= n-1):
+      print(" "*(n-i-1)+ "*"*(2*i+1))
+    else:
+      print(" "*(abs(n-i)+1)+ "*"*((2*n-i)*2-3))
+
+def StarV3_2():
+  n = int(input())
+  for i in range(1,n*2):
+      print(" "*abs(i-n) + "*"* ((n*2)-1 - abs(i-n)*2) )
+
+StarV3_2()
